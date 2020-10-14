@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Ruby Digest: Ruby book reviews</title>
+    <script src="index.js"></script>
     <link type="text/css" href="style.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css?family=Roboto+Mono"
@@ -11,38 +12,65 @@
     />
   </head>
   <body>
-    <header><h1>Ruby Digest: Ruby book reviews</h1></header>
-    <h1>Books Reviewed</h1>
+    <nav class="navbar">
+      <span class="navbar-toggle" id="js-navbar-toggle"></span>
+      <a href="ruby_PNG48.png" class="logo">
+        <img
+          src="ruby_PNG48.png" width="50" height="40"
+        />
+        </a>
+      <ul class="main-nav" id="js-menu">
+        <li>
+          <a href="index.html" class="nav-links">Home</a>
+        </li>
+        <li>
+          <a href="eloquent-ruby.html" class="nav-links">Reviews</a>
+        </li>
+        <li>
+          <a href="#" class="nav-links">About Us</a>
+        </li>
+        <li>
+          <a href="#" class="nav-links">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+
+    <header class="header_title"><h1>Ruby Digest: Ruby book reviews</h1></header>
+    <h1 class ="books_reviewed">Books Reviewed</h1>
     <div class="container" id="flex">
       <div class="books-box">
-        <h2>Clean Ruby</h2>
+        <h2><em>Clean Ruby</em></h2>
+        <a href="clean_ruby.html">
         <img
           src="../images/cover-clean_ruby.jpg"
           alt="Book title: Clean Ruby"
         />
+        </a>
       </div>
       <div class="books-box">
-        <h2>Confident Ruby</h2>
+        <h2><em>Confident Ruby</em></h2>
         <img
         src="../images/cover-confident_ruby.jpg"
         alt="Book title: Confident Ruby"
       />
       </div>
       <div class="books-box">
-        <h2>Eloquent Ruby</h2>
+        <h2><em>Eloquent Ruby</em></h2>
+        <a href="eloquent-ruby.html">
         <img
         src="../images/cover-eloquent_ruby.jpg"
         alt="Book title: Eloquent Ruby"
       />
+    </a>
       </div>
       <div class="books-box">
-        <h2>Ruby Science</h2>
+        <h2><em>Ruby Science</em></h2>
         <img
         src="../images/cover-ruby_science.jpg"
         alt="Book title: Eloquent Ruby"
       />
       <div class="books-box">
-        <h2>Well Grounded Rubyist</h2>
+        <h2><em>Well Grounded Rubyist</em></h2>
         <img
         src="../images/cover-well_grounded_rubyist.jpg"
         alt="Book title: Well Grounded rubyist"

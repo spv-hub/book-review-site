@@ -4,8 +4,32 @@ body {
   font-size: medium;
   background-color: whitesmoke;
   box-sizing: border-box;
-
   font-family: "Roboto Mono", monospace;
+}
+
+.header_title {
+  padding: 30px;
+}
+
+.reviewed_pics {
+  padding: 0px 40px;
+}
+
+.book_details {
+  padding: 0px 40px;
+}
+
+.books_reviewed {
+  padding: 40px;
+  font-weight: lighter;
+}
+
+.book_description {
+  padding: 40px 100px 20px 100px;
+}
+
+.reader_reviews {
+  padding: 20px 60px 20px 60px;
 }
 
 .container {
@@ -18,4 +42,81 @@ body {
   overflow: hidden;
   min-width: 0;
   flex-direction: row;
+}
+
+/* navbar section */
+.navbar {
+  font-size: 18px;
+  background-color: black;
+  padding-bottom: 10px;
+}
+
+.main-nav {
+  list-style-type: none;
+  display: none;
+}
+
+.nav-links,
+.logo {
+  text-decoration: none;
+  color: white;
+}
+
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+}
+
+.active {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+  }
+
+  .main-nav {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .nav-links {
+    margin-left: 40px;
+  }
+
+  .logo {
+    margin-top: 0;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .logo:hover,
+  .nav-links:hover {
+    color: white;
+  }
 }
