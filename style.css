@@ -53,7 +53,8 @@ body {
 
 .main-nav {
   list-style-type: none;
-  display: none;
+  /* display: flex; */
+  /* display: none; */
 }
 
 .nav-links,
@@ -62,7 +63,15 @@ body {
   color: white;
 }
 
-.main-nav li {
+.p {
+  float: none;
+  text-decoration: none;
+  /* display: none; */
+}
+
+.main-nav,
+.p,
+li {
   text-align: center;
   margin: 15px auto;
 }
@@ -83,40 +92,66 @@ body {
   font-size: 24px;
 }
 
-.active {
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0;
+  height: 70px;
+  align-items: center;
+  color: white;
+}
+
+.main-nav {
+  color: white;
+  display: flex;
+  margin-right: 30px;
+  color: black;
+}
+
+.nav-links {
+  margin-left: 40px;
+}
+
+.logo {
+  margin-top: 0;
+}
+
+.logo:hover,
+.nav-links:hover {
+  color: white;
+}
+
+.dropdown-content {
+  list-style-type: none;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 0px;
+  z-index: 1;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* + means look at all dropdown siblings of the 'a' that is being hovered */
+a:hover + .dropdown-content {
   display: block;
 }
 
-@media screen and (min-width: 768px) {
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 0;
-    height: 70px;
-    align-items: center;
+.dropdown-content:hover {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  #flex {
+    display: block;
   }
 
   .main-nav {
-    display: flex;
-    margin-right: 30px;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .nav-links {
-    margin-left: 40px;
-  }
-
-  .logo {
-    margin-top: 0;
-  }
-
-  .navbar-toggle {
-    display: none;
-  }
-
-  .logo:hover,
-  .nav-links:hover {
-    color: white;
+    display: inline;
   }
 }
