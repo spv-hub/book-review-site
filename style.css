@@ -48,12 +48,11 @@ body {
 /* navbar section */
 .navbar{
   font-size: 14px;
-  position: absolute;
-  padding: 30px;
-  left: 0;
+  padding: 50px;
   width: 100%;
   background-color: black;
   color: white;
+  margin-top: -40px;
 }
 
 .main-nav {
@@ -70,7 +69,7 @@ body {
 .drop-items {
   float: none;
   text-decoration: none;
-  color:white;
+  /* display: none; */
 }
 
 .main-nav,
@@ -96,18 +95,16 @@ li {
 }
 
 .navbar,
-.site-footer {
+footer {
   display: flex;
-  justify-content: space-between;
-  padding-bottom: 0;
-  height: 70px;
-  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  height: 40px;
   color: white;
 }
 
 .main-nav,
-.site-footer {
-  color: white;
+footer {
   display: flex;
   margin-right: 30px;
   color: black;
@@ -115,10 +112,6 @@ li {
 
 .nav-links {
   margin-left: 40px;
-}
-
-.logo {
-  margin-top: 0;
 }
 
 .dropdown-content {
@@ -164,32 +157,19 @@ a:visited {
   }
 }
 
-.site-footer  {
-  position: absolute;
-  padding: 25px;
+/* footer  .social-wrapper li {
+  display: flex;
+  justify-content: space-evenly;
   left: 0;
+  bottom: 0;
   width: 100%;
-  background-color: black;
-  color: white;
-  margin-top: 50px;
-}
+  height: 0.0rem;
+  padding-top: 30px;
+} */
 
 .social-wrapper ul li {
   display: inline;
-  padding: 10px;
+  padding: 20px;
 }
 
-.twitter-icon,
-.facebook-icon {
-  width: 50px;
-  height: 50px;
-  opacity: 0.6;
-  filter: alpha(opacity=60); /* For IE8 and earlier */
-  border-radius: 25px;
-}
 
-.twitter-icon:hover,
-.facebook-icon:hover {
-  opacity: 1;
-  filter: alpha(opacity=100); /* For IE8 and earlier */
-}
